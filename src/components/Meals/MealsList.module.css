@@ -1,3 +1,17 @@
+.container{
+    
+     border: 6px solid #333;  
+     padding: 16px; 
+     border-radius: 8px; 
+     background-color: #f9f9f9; 
+     width: fit-content; 
+     margin: 20px auto; 
+    
+ 
+}
+
+
 .item{
-    color:white;
+    color:black;
+    display: grid;
 }
