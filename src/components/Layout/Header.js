@@ -1,17 +1,23 @@
 
-import React from 'react';
-import './Header.css';
+import React, {Fragment}from 'react';
 
-const Header = () => {
-    const cartValue=0
+
+import mealsImage from '../../assets/meals.jpg'; // uploading image from assets
+import classes from './Header.module.css';
+import HeaderCartButton from './HeaderCartButton';
+
+const Header = (props) => {
+    
   return (
-    <header className="header">
+    <Fragment>
+    <header className={classes.header}>
       <h1>ReactMeals</h1>
-      <div>
-        <span>🛒</span>
-        <span>Your Cart {cartValue}</span> 
-      </div>
+      <HeaderCartButton/>
     </header>
+    <div className={classes['main-image']}>
+      <img src={mealsImage} alt='A table full of delicious food!'/>
+    </div>
+    </Fragment>
   );
 };
 
