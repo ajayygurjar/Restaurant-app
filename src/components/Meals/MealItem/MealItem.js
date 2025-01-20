@@ -9,14 +9,11 @@ const MealItem = (props) => {
 
   const price = `$${props.price.toFixed(2)}`;
 
-  const addToCartHandler = (amount) => {
+  const addToCartHandler=(amount)=>{
     cartCtx.addItem({
-      id: props.id,
-      name: props.name,
-      amount: amount,
-      price: props.price,
+      id:props.id,name:props.name,amount:amount,price:props.price
     });
-  };
+  }
 
   return (
     <li className={classes.meal}>
